@@ -1,0 +1,96 @@
+html, body, header, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Ph?n trên cùng (?nh tr??ng) */
+header {
+            background-color: #00ccff;
+            position: relative; /* ?? có th? s? d?ng v? trí t??ng ??i cho hình ?nh */
+            width: 100%; /* ??m b?o r?ng ph?n header có chi?u r?ng 100% c?a màn hình */
+            height: 150px; /* Chi?u cao c?a ph?n header */
+        }
+
+        .left-image {
+            position: absolute; /* ?? ?i?u ch?nh v? trí c?a hình ?nh */
+            left: 0; /* ??t hình ?nh bên trái */
+            top: 0; /* ??t hình ?nh ? trên cùng */
+            height: 80%; /* Chi?u cao c?a hình ?nh là 100% ?? nó c?n theo chi?u cao c?a ph?n header */
+        }
+
+        .right-image {
+            position: absolute; /* ?? ?i?u ch?nh v? trí c?a hình ?nh */
+            right: 0; /* ??t hình ?nh bên ph?i */
+            top: 0; /* ??t hình ?nh ? trên cùng */
+            height: 80%; /* Chi?u cao c?a hình ?nh là 100% ?? nó c?n theo chi?u cao c?a ph?n header */
+        }
+/* Ph?n gi?a */
+main {
+    display: flex; /* Hi?n th? các ph?n trong main cùng m?t hàng */
+    padding: 20px; /* Kho?ng cách xung quanh n?i dung chính */
+}
+
+/* Ph?n thông tin cá nhân */
+.personal-info {
+    display: flex; /* Hi?n th? ?nh cá nhân và thông tin cùng m?t hàng */
+    flex: 1; /* Ph?n t? personal-info có tr?ng s? 1 (chia ??u không gian v?i introduction) */
+}
+
+/* ?nh cá nhân */
+.personal-info img {
+    width: 100px; /* Kích th??c ?nh cá nhân */
+    height: 100px;
+    border-radius: 50%; /* Bo góc ?? thành hình tròn */
+    margin-right: 20px; /* Kho?ng cách bên ph?i c?a ?nh cá nhân */
+}
+
+/* Thông tin cá nhân */
+.info {
+    flex: 1; /* Chia ??u không gian v?i ?nh cá nhân */
+}
+
+/* N?i dung gi?i thi?u */
+.introduction {
+    flex: 2; /* Ph?n t? introduction chi?m g?p ?ôi không gian so v?i personal-info */
+    padding: 20px; /* Kho?ng cách xung quanh n?i dung gi?i thi?u */
+}
+
+/* Ph?n d??i cùng (Bài t?p các tu?n) */
+footer {
+    background-color: #00ccff; /* Màu n?n footer */
+    padding: 20px; /* Kho?ng cách xung quanh n?i dung footer */
+}
+
+/* Tiêu ?? "Bài t?p các tu?n" */
+.assignments h1 {
+    color: #ffff00; /* Màu ch? tr?ng */
+    text-align: center;
+}
+
+/* Các tu?n và danh sách bài t?p */
+.assignment-week {
+    margin: 20px 0; /* Kho?ng cách trên và d??i cho t?ng tu?n */
+}
+
+/* Tiêu ?? tu?n */
+.assignment-week h2 {
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 120%;
+}
+
+/* Danh sách bài t?p */
+.assignment-week ul {
+    list-style: none; /* Lo?i b? d?u ch?m ??u dòng */
+    padding-left: 0; /* Lo?i b? kho?ng cách ??u dòng */
+}
+.assignment-week a {font-size: 120%; }
+/* Danh sách các m?c trong danh sách */
+.assignment-week li {
+    margin-left: 20px; /* Kho?ng cách bên trái */
+    line-height: 1.5; /* ?i?u ch?nh ?? cao c?a dòng ?? d? ??c */
+    color: #fff; /* Màu ch? tr?ng */
+}
+p {
+    font-weight: bold;
+}
